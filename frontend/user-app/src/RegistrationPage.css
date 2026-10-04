@@ -1,0 +1,229 @@
+.registration-page {
+  min-height: 100vh;
+  background: #f4f6f8;
+  padding: 40px 20px;
+}
+
+.registration-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.registration-container h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #222;
+}
+
+/* Section heading */
+
+.section-heading {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-size: 22px;
+  color: #222;
+}
+
+/* ONLY Personal Information and Other Information boxes */
+
+.section-box {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Fields inside the two main boxes */
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group label,
+.normal-field > label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Text inputs */
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group input[type="time"],
+.form-group input[type="month"],
+.form-group select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 15px;
+  background: white;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+
+/* NO BOX around these fields */
+
+.normal-field {
+  margin-bottom: 25px;
+}
+
+.normal-field > label {
+  font-weight: 600;
+}
+
+/* Country */
+
+.normal-field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 15px;
+  background: white;
+}
+
+/* Gender */
+
+.radio-group {
+  display: flex;
+  gap: 25px;
+  margin-top: 8px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: normal;
+}
+
+/* Skills */
+
+.skills-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+.skills-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: normal;
+}
+
+/* Experience */
+
+.experience-range {
+  width: 100%;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+/* Favorite Color */
+
+.form-group input[type="color"] {
+  width: 70px;
+  height: 45px;
+  padding: 3px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* File inputs */
+
+.form-group input[type="file"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background: white;
+}
+
+/* Selected file name */
+
+.file-name {
+  color: #555;
+  font-size: 14px;
+  margin-top: 7px;
+}
+
+/* Validation errors */
+
+.error {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+/* Newsletter and Terms */
+
+.bottom-options {
+  margin-top: 20px;
+}
+
+.bottom-options label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.form-actions button {padding: 11px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.register-button {background: #1976d2;color: white;}
+
+.reset-button {background: #777; color: white;}
+
+.register-button:hover {background: #125ca5;}
+
+.reset-button:hover { background: #555;}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .registration-page {
+    padding: 20px 10px;
+  }
+
+  .section-box {padding: 18px; }
+
+  .radio-group {flex-direction: column; gap: 10px;}
+
+  .skills-group {flex-direction: column; gap: 10px; }
+}
